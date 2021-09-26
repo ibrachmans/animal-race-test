@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fda531;
+  overflow: hidden;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cardbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  margin: 5rem;
+
+  background-color: #FFE95C;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+#buttonbox {
+  display: flex;
+  padding: 2rem;
+}
+
+button {
+  display: flex;
+  height: 3.5rem;
+  margin: 0 2.5rem 0 2.5rem;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #000;
+  border-radius: 10px;
+
+  color: #000;
+  background:rgb(255, 213, 74);
+  font-size: 1rem;
+  font-weight: bold;
+
+  padding: 0 15rem 0 2rem;
+
+  cursor: pointer;
+
+  transition: filter 0.3s;
+}
+
+button:hover {
+  filter: brightness(0.8);
+}
+
+#listBtn, #registerBtn {
+  display: flex;
+  width: 20rem;
+  padding: 0 2rem 0 2rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: 20rem 0 0 35rem;
+  padding: 2rem;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 50rem;
+}
+
+table, th, td {
+  border: solid 1px #000;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  background: #f8c98c;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+p, label, input {
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-style: italic;
+  font-size: 15px;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+}
+
+input {
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+  
+}
+

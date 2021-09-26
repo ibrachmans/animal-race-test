@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Corrida animal</title>
+</head>
+<body>
+  <div id="container">
+    <div class="cardbox">
+      <h1>Prepare-se para a corrida animal!</h1>
+      <div id=buttonbox>
+        <button id="listBtn">Veja a lista</button>
+      </div>
+      <h2>Ou <br>cadastre um novo</h2>
+      <div id="listModal" class="modal">
+        <div class="modal-content">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Nome</th>
+                <th>Espécie</th>
+                <th>Velocidade<br>(m/s)</th>
+                <th>Tempo para percorrer 10 metros<br>(segundos)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Animal 1</td>
+                <td>Rex</td>
+                <td>Canino</td>
+                <td>5</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Animal 2</td>
+                <td>Mimoso</td>
+                <td>Felino</td>
+                <td>2</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>Animal 3</td>
+                <td>Remy</td>
+                <td>Roedor</td>
+                <td>1</td>
+                <td>10</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="register" class="form">
+        <div class="register-content">
+          <form>
+            <p>Os campos são obrigatórios e <br>a velocidade deve ser um número de 1 a 10.</p>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="user_name" required>
+          
+            <label for="species">Espécie:</label>
+            <input type="text" list="species" name="species_name" required>
+            <datalist id="species">
+              <option>Ave</option>
+              <option>Felino</option>
+              <option>Canino</option>
+              <option>Roedor</option>
+            </datalist>
+          
+            <label for="speed">Velocidade:</label>
+            <input 
+              type="number"
+              min="1"
+              max="10"
+              step="1"
+              name="animal_speed" 
+              required>
+            </input>
+          
+            <button id="registerBtn" type="submit">Registrar!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
