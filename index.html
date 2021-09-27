@@ -55,18 +55,19 @@
       </div>
       <div id="register" class="form">
         <div class="register-content">
-          <form>
+          <form id="newRegisterForm">
             <p>Os campos são obrigatórios e <br>a velocidade deve ser um número de 1 a 10.</p>
             <label for="name">Nome:</label>
-            <input type="text" id="name" name="user_name" required>
+            <input type="text" id="name" name="name" required>
           
             <label for="species">Espécie:</label>
-            <input type="text" list="species" name="species_name" required>
+            <input type="text" list="species" name="species" id="species_value" required>
             <datalist id="species">
               <option>Ave</option>
               <option>Felino</option>
               <option>Canino</option>
               <option>Roedor</option>
+              <option>Reptil</option>
             </datalist>
           
             <label for="speed">Velocidade:</label>
@@ -75,11 +76,12 @@
               min="1"
               max="10"
               step="1"
-              name="animal_speed" 
+              name="speed"
+              id="speed_value" 
               required>
             </input>
           
-            <button id="registerBtn" type="submit">Registrar!</button>
+            <button id="registerBtn" type="submit" onclick="newAnimal()">Registrar!</button>
           </form>
         </div>
       </div>
