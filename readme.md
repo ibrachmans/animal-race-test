@@ -13,4 +13,4 @@ You can use any IDE of your preference and i'm using only vanilla javascript.
 
 ## Documentation
 
-You can check the documentation on here: https://documenter.getpostman.com/view/17643373/UUxzA7SV
+You can check the documentation here: https://documenter.getpostman.com/view/17643373/UUxzA7SV
